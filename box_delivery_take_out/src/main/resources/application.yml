@@ -17,3 +17,5 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: ASSIGN_ID
+box_delivery:
+             path: /home/wxj/GitHub/box_delivery/box_delivery_take_out/images/Dishimages
