@@ -104,4 +104,17 @@ public class DishController {
         return R.success(dishDto);
     }
 
+    /**
+     * 新修改菜品
+     * @param dishDto
+     * @return
+     */
+    @PutMapping
+    public R<String> update(@RequestBody  DishDto dishDto){
+        log.info(dishDto.toString());
+        dishService.updateWithFlavor(dishDto);
+        return R.success("新加菜品成功");
+    }
+
+
 }
